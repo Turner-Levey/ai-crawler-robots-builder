@@ -4,6 +4,9 @@ Free no-tracking browser utility for drafting and auditing `robots.txt` rules fo
 
 Live site: https://ai-crawler-robots-builder.vercel.app/
 
+No-Login pending listing: https://nologin.tools/tool/ai-crawler-robots-builder-vercel-app/
+No-Login badge status: https://nologin.tools/badge/ai-crawler-robots-builder-vercel-app/
+
 ## What It Does
 
 - Builds copyable `robots.txt` groups for common AI crawler tokens.
@@ -25,6 +28,8 @@ Robots.txt is a preference file for cooperating crawlers. It is not an authentic
 ## Privacy
 
 The app is static HTML, CSS, and JavaScript. It has no runtime network calls and does not store pasted content.
+
+The No-Login directory route is public and pending review. The badge route is public and pending verification.
 
 ## License
 

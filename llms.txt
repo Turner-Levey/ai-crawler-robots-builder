@@ -6,6 +6,8 @@ URL: https://ai-crawler-robots-builder.vercel.app/
 Source: https://github.com/Turner-Levey/ai-crawler-robots-builder
 License: MIT
 Builder: Turner Levey
+No-Login pending listing: https://nologin.tools/tool/ai-crawler-robots-builder-vercel-app/
+No-Login badge status: https://nologin.tools/badge/ai-crawler-robots-builder-vercel-app/
 
 ## Useful Paths
 
