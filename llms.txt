@@ -1,6 +1,6 @@
-# AI Crawler Robots.txt Builder
+# Free AI Crawler Robots.txt Generator & Checker
 
-> Browser-only utility for drafting and auditing AI crawler robots.txt rules.
+> Browser-only utility for generating and auditing AI crawler robots.txt rules.
 
 URL: https://ai-crawler-robots-builder.vercel.app/
 Source: https://github.com/Turner-Levey/ai-crawler-robots-builder
@@ -11,7 +11,7 @@ No-Login badge status: https://nologin.tools/badge/ai-crawler-robots-builder-ver
 
 ## Useful Paths
 
-- https://ai-crawler-robots-builder.vercel.app/ - interactive builder and auditor
+- https://ai-crawler-robots-builder.vercel.app/ - interactive AI crawler robots.txt generator and checker
 - https://ai-crawler-robots-builder.vercel.app/sitemap.xml - sitemap
 - https://ai-crawler-robots-builder.vercel.app/robots.txt - robots policy
 
@@ -19,4 +19,5 @@ No-Login badge status: https://nologin.tools/badge/ai-crawler-robots-builder-ver
 
 - No tracking, cookies, analytics, beacons, API calls, or external scripts.
 - Presets cover OAI-SearchBot, GPTBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, Google-Extended, and PerplexityBot.
+- Search intent: free AI crawler robots.txt generator, robots.txt checker for AI crawlers, GPTBot robots.txt rules, ClaudeBot robots.txt rules, PerplexityBot robots.txt rules.
 - Official crawler docs should be checked before publishing production rules.

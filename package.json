@@ -2,7 +2,7 @@
   "name": "ai-crawler-robots-builder",
   "version": "1.0.0",
   "private": true,
-  "description": "No-tracking browser utility for AI crawler robots.txt rules.",
+  "description": "No-tracking AI crawler robots.txt generator and checker.",
   "license": "MIT",
   "scripts": {
     "check": "node --check script.js && node --check submit-indexnow.mjs"

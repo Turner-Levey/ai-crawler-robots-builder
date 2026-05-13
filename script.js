@@ -169,7 +169,7 @@ function buildRobotsText() {
   const blocked = selectedAgents().filter((agent) => agent.action === "block").length;
   const allowed = selectedAgents().filter((agent) => agent.action === "allow").length;
   const header = [
-    "# AI crawler robots.txt draft",
+    "# AI crawler robots.txt generator draft",
     "# Review with current crawler documentation and your server logs before publishing.",
     `# Generated: ${new Date().toISOString().slice(0, 10)}`,
     ""

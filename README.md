@@ -1,6 +1,6 @@
-# AI Crawler Robots.txt Builder
+# Free AI Crawler Robots.txt Generator & Checker
 
-Free no-tracking browser utility for drafting and auditing `robots.txt` rules for AI crawler and AI search user-agent tokens.
+Free no-tracking browser utility for generating and auditing `robots.txt` rules for AI crawler and AI search user-agent tokens.
 
 Live site: https://ai-crawler-robots-builder.vercel.app/
 
@@ -9,9 +9,9 @@ No-Login badge status: https://nologin.tools/badge/ai-crawler-robots-builder-ver
 
 ## What It Does
 
-- Builds copyable `robots.txt` groups for common AI crawler tokens.
+- Generates copyable `robots.txt` groups for common AI crawler tokens.
 - Separates search/retrieval tokens from model-training tokens where official docs make that distinction.
-- Audits pasted `robots.txt` text for common AI crawler tokens and root-level allow/block decisions.
+- Checks pasted `robots.txt` text for common AI crawler tokens and root-level allow/block decisions.
 - Runs entirely in the browser with no login, cookies, analytics, beacons, API calls, or external scripts.
 
 ## Source Notes
