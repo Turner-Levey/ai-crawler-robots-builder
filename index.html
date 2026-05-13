@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Crawler Robots.txt Builder</title>
+    <meta
+      name="description"
+      content="Free no-tracking browser tool for drafting and auditing AI crawler robots.txt rules for GPTBot, OAI-SearchBot, ClaudeBot, Claude-SearchBot, Google-Extended, and PerplexityBot."
+    >
+    <link rel="canonical" href="https://ai-crawler-robots-builder.vercel.app/">
+    <meta property="og:title" content="AI Crawler Robots.txt Builder">
+    <meta property="og:description" content="Draft and audit AI crawler robots.txt rules in the browser. No tracking, no login, open source.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ai-crawler-robots-builder.vercel.app/">
+    <meta property="og:image" content="https://ai-crawler-robots-builder.vercel.app/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Crawler Robots.txt Builder">
+    <meta name="twitter:description" content="Draft and audit AI crawler robots.txt rules in the browser.">
+    <meta name="twitter:image" content="https://ai-crawler-robots-builder.vercel.app/og.svg">
+    <link rel="stylesheet" href="/styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "AI Crawler Robots.txt Builder",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "url": "https://ai-crawler-robots-builder.vercel.app/",
+        "isAccessibleForFree": true,
+        "creator": {
+          "@type": "Person",
+          "name": "Turner Levey"
+        },
+        "description": "Browser-only utility for drafting and auditing AI crawler robots.txt rules."
+      }
+    </script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Robots.txt policy utility</p>
+        <h1>AI Crawler Robots.txt Builder</h1>
+      </div>
+      <nav aria-label="Project links">
+        <a href="https://github.com/Turner-Levey/ai-crawler-robots-builder">Source</a>
+        <a href="/llms.txt">llms.txt</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="workspace" aria-label="Policy builder and output">
+        <div class="panel controls">
+          <div class="panel-head">
+            <h2>Policy</h2>
+            <span id="agent-count">0 agents</span>
+          </div>
+
+          <fieldset class="segmented" aria-label="Policy mode">
+            <label>
+              <input type="radio" name="mode" value="search" checked>
+              <span>Search visible</span>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="strict">
+              <span>Block selected</span>
+            </label>
+            <label>
+              <input type="radio" name="mode" value="custom">
+              <span>Custom</span>
+            </label>
+          </fieldset>
+
+          <div id="agent-list" class="agent-list"></div>
+
+          <label class="field">
+            <span>Disallow paths</span>
+            <textarea id="disallow-paths" rows="5">/private/
+/account/
+/checkout/
+/wp-admin/</textarea>
+          </label>
+
+          <label class="field">
+            <span>Allow paths</span>
+            <textarea id="allow-paths" rows="3">/blog/
+/docs/</textarea>
+          </label>
+
+          <label class="field">
+            <span>Additional user-agent tokens</span>
+            <input id="custom-agents" type="text" placeholder="CCBot, ExampleBot">
+          </label>
+
+          <div class="button-row">
+            <button id="copy-output" type="button">Copy robots.txt</button>
+            <button id="download-output" class="secondary" type="button">Download</button>
+          </div>
+        </div>
+
+        <div class="panel output-panel">
+          <div class="panel-head">
+            <h2>Output</h2>
+            <span id="policy-summary">Ready</span>
+          </div>
+          <pre id="robots-output" tabindex="0"></pre>
+        </div>
+      </section>
+
+      <section class="workspace lower" aria-label="Robots audit">
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Audit</h2>
+            <button id="load-sample" class="secondary" type="button">Sample</button>
+          </div>
+          <label class="field">
+            <span>Paste existing robots.txt</span>
+            <textarea id="audit-input" rows="12" placeholder="User-agent: GPTBot&#10;Disallow: /"></textarea>
+          </label>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Findings</h2>
+            <span id="audit-summary">Waiting</span>
+          </div>
+          <div id="audit-results" class="audit-results"></div>
+        </div>
+      </section>
+
+      <section class="sources" aria-label="Crawler source links">
+        <a href="https://developers.openai.com/api/docs/bots">OpenAI crawlers</a>
+        <a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Anthropic crawlers</a>
+        <a href="https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers">Google crawler tokens</a>
+        <a href="https://www.perplexity.ai/help-center/en/articles/10354969-how-does-perplexity-follow-robots-txt">Perplexity robots.txt</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>No tracking, no cookies, no external scripts.</span>
+      <span>Robots.txt is a crawler preference file, not an access-control guarantee.</span>
+    </footer>
+
+    <script src="/script.js" defer></script>
+  </body>
+</html>
