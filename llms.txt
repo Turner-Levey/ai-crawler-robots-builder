@@ -20,4 +20,5 @@ No-Login badge status: https://nologin.tools/badge/ai-crawler-robots-builder-ver
 - No tracking, cookies, analytics, beacons, API calls, or external scripts.
 - Presets cover OAI-SearchBot, GPTBot, ChatGPT-User, ClaudeBot, Claude-SearchBot, Claude-User, Google-Extended, and PerplexityBot.
 - Search intent: free AI crawler robots.txt generator, robots.txt checker for AI crawlers, GPTBot robots.txt rules, ClaudeBot robots.txt rules, PerplexityBot robots.txt rules.
+- Source docs refreshed 2026-05-14 after Perplexity's public crawler docs moved to https://docs.perplexity.ai/guides/bots.
 - Official crawler docs should be checked before publishing production rules.

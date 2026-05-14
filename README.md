@@ -16,12 +16,12 @@ No-Login badge status: https://nologin.tools/badge/ai-crawler-robots-builder-ver
 
 ## Source Notes
 
-Crawler presets are based on public vendor documentation checked on 2026-05-13:
+Crawler presets are based on public vendor documentation checked on 2026-05-14:
 
 - OpenAI crawler docs: https://developers.openai.com/api/docs/bots
 - Anthropic crawler docs: https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
 - Google common crawlers: https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers
-- Perplexity robots.txt note: https://www.perplexity.ai/help-center/en/articles/10354969-how-does-perplexity-follow-robots-txt
+- Perplexity crawler docs: https://docs.perplexity.ai/guides/bots
 
 Robots.txt is a preference file for cooperating crawlers. It is not an authentication, authorization, or enforcement layer.
 
