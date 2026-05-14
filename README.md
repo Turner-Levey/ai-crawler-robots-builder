@@ -4,6 +4,7 @@ Free no-tracking browser utility for generating and auditing `robots.txt` rules 
 
 Live site: https://ai-crawler-robots-builder.vercel.app/
 
+Tiny Tool Town listing: https://www.tinytooltown.com/tools/ai-crawler-robots-txt-builder/
 No-Login pending listing: https://nologin.tools/tool/ai-crawler-robots-builder-vercel-app/
 No-Login badge status: https://nologin.tools/badge/ai-crawler-robots-builder-vercel-app/
 
@@ -29,7 +30,7 @@ Robots.txt is a preference file for cooperating crawlers. It is not an authentic
 
 The app is static HTML, CSS, and JavaScript. It has no runtime network calls and does not store pasted content.
 
-The No-Login directory route is public and pending review. The badge route is public and pending verification.
+The Tiny Tool Town directory route is public. The No-Login directory route is public and pending review. The badge route is public and pending verification.
 
 ## License
 
